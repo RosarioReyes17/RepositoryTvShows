@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ar.projectfb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tvshowicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tvshowicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".general.FavoriteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".general.HomeTvShow"
+            android:exported="false" />
+        <activity
+            android:name=".general.DetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".general.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".user.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".user.LoginActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

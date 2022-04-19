@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="register">REGISTER</string>
+    <string name="name">NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="send_password">SEND PASSWORD</string>
+    <string name="registerText">REGISTER</string>
+    <string name="address">ADDRESS</string>
+    <string name="country">COUNTRY</string>
+    <string name="date_of_birth">DATE OF BIRTH</string>
+    <string name="gender">GENDER</string>
+    <string name="password">PASSWORD</string>
+    <string name="phone">PHONE</string>
+    <string name="logout">LOGOUT</string>
+    <string name="email">EMAIL</string>
+    <string name="Profile">PROFILE</string>
+    <string name="tvshow">TV SHOWS</string>
+    <string name="favorites">FAVORITES</string>
+
+    <string name="app_name">TV SHOWS </string>
+    <string name="TxtMovies">Movies</string>
+    <string name="TxtName">Name</string>
+    <string name="TxtLastName">Last Name</string>
+    <string name="btnSubmit">SUBMIT</string>
+    <string name="BtnSearch"> SEARCH </string>
+    <string name="BtnAccess"> ACCESS </string>
+    <string name="txtTitle"> TITLE </string>
+    <string name="txtDescriptions"> DESCRIPTIONS </string>
+    <string name="ReleaseDate"> RELEASE DATE </string>
+    <string name="Status"> STATUS </string>
+    <string name="Country"> COUNTRY </string>
+    <string name="YouSource"> SOURCE </string>
+    <string name="EndDate"> END DATE </string>
+    <string name="TxtIn">YOUR FAVORITE TV SHOWS ARE HERE</string>
+
+</resources>

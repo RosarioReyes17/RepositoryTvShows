@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="#0078BF"
+    android:orientation="vertical"
+    tools:context=".general.HomeTvShow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_Search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="#4CAF50"
+            android:text="Search"
+            android:textColor="@color/black"></Button>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvidAll"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#0078BF"
+
+        tools:listitem="@layout/tvshow_rv_item">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BtnBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:backgroundTint="#2B1989"
+            app:backgroundTint="#2B1989"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            android:textColor="@color/white"
+            app:iconGravity="start"
+            app:maxImageSize="40dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Current Page"></TextView>
+
+            <TextView
+                android:id="@+id/current_Page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BtnNext"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="#2B1989"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            app:backgroundTint="#2B1989"
+            app:iconGravity="end"
+            app:maxImageSize="40dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+
+
+</LinearLayout>

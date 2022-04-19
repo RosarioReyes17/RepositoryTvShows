@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardidview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0078BF"
+    android:backgroundTint="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#0078BF">
+
+
+
+        <!--text view for displaying our note text-->
+
+        <!--text view for displaying our last updated text-->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/idTVTitle"
+                    android:layout_width="243dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:padding="4dp"
+                    android:text="Tilte"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                //android:fontFamily="@font/krona_one"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scrollX="10dp"
+                    android:scrollY="12dp"
+                    android:src="@drawable/ic_favostart"
+                    android:tint="#FFEB3B"
+                    app:backgroundTint="#02F44336"
+                    app:maxImageSize="40dp">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6" />
+
+                <TextView
+                    android:id="@+id/idTVDate"
+                    android:layout_width="211dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:padding="4dp"
+                    android:text="Updated At"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+                //android:fontFamily="@font/krona_one"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1" />
+
+
+                <TextView
+                    android:id="@+id/idSource"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:padding="4dp"
+                    android:text="Source"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+                //android:fontFamily="@font/krona_one"
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
